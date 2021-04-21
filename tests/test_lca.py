@@ -1447,7 +1447,7 @@ def test_single_summarize():
 def test_single_summarize_singleton():
     with utils.TempDirectory() as location:
         db1 = utils.get_test_data('lca/delmont-1.lca.json')
-        input_sig = utils.get_test_data('lca/TARA_ASE_MAG_00031.sig')
+        input_sig = utils.get_test_data('test.txt')
 
         cmd = ['lca', 'summarize', '--db', db1, '--query', input_sig,]
         status, out, err = utils.runscript('sourmash', cmd)
